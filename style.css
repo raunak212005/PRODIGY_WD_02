@@ -1,0 +1,136 @@
+body{
+    background-color:#f5f5f5;
+}
+.title{
+    text-align:center;
+    font-size:4rem;
+    margin:0;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+.laps{
+    height:30rem;
+    width:30rem;
+    border:2px solid black;
+    background-color:#ddd6fe;
+    border-radius:1rem;
+    margin:2rem;
+}
+.lap-heading{
+    text-align:center;
+    font-size:4rem;
+    margin:0;
+}
+.lap-history{
+    overflow-y:auto;
+    height:80%;
+    width:100%;
+}
+.lap-info{
+    margin:0.2rem;
+    font-size:3rem;
+    text-align:center;
+    background-color:#BFAFD5;
+}
+.lap-history::-webkit-scrollbar {
+    display:none;
+}
+.stopwatch{
+    height:25rem;
+    width:25rem;
+    border:2px solid #555;
+    background-color:#ddd6fe;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:2rem;
+}
+
+.timer{
+    background-color:#8F7AB8;
+    color:white;
+    font-size:3rem;
+    border:1px solid black;
+    border-radius:0.5rem;
+    width:70%;
+    height:13%;
+    text-align:center;
+    padding:0.5rem;
+}
+.buttons{
+    width:70%;
+    height:30%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:0;
+}
+.start{
+    background-color:green;
+}
+.pause{
+    background-color:yellow;
+    color:black!important;
+}
+.reset{
+    background-color:red;
+}
+.lap{
+    background-color:blue;
+}
+.button{
+    width:6rem;
+    height:2.5rem;
+    padding:0.2rem;
+    margin-left:0.4rem;
+    border-radius:0.5rem;
+    font-size:1.3rem;
+    font-weight:800;
+    color:white;
+}
+@media (min-width: 0px) and (max-width: 1100px){
+    .laps{
+        height:20rem;
+        width:20rem;
+    }
+    .stopwatch{
+        margin-top:0;
+        height:15rem;
+        width:15rem;
+    }
+    .timer{
+        font-size:2rem;
+    }
+    .button{
+        width:3.5rem;
+        height:2rem;
+        font-size:0.8rem;
+    }
+    .laps{
+        margin-top:0;
+    }
+    .lap-heading{
+        font-size:3rem;
+    }
+    .lap-info{
+        font-size:2rem;
+    }
+    .lap-history{
+        height:75%;
+    }
+    .title{
+        font-size:2.5rem;
+    }
+}
+@media (min-width: 0px) and (max-width: 727px){
+    .container{
+        margin-top:20px;
+    } 
+}
